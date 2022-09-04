@@ -1,0 +1,145 @@
+.portada .portada__anatomia .anatomia__informacion h2, .portada .portada__patologias .patologias__informacion h2, .portada .portada__farmacos .farmacos__informacion h2 {
+  margin-top: 0;
+  background-color: hsl(208deg, 63%, 55%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.navegation {
+  display: flex;
+  justify-content: space-between;
+}
+.navegation .nav__log {
+  display: flex;
+  align-items: center;
+}
+.navegation .nav__buscador {
+  display: flex;
+  align-items: center;
+}
+.navegation .nav__buscador input {
+  width: 200px;
+}
+.navegation .nav__menu .menu__horizontal {
+  display: flex;
+  list-style: none;
+}
+.navegation .nav__menu .menu__horizontal li:hover {
+  background-color: hsl(207deg, 100%, 72%);
+  border-radius: 14px 14px 0 0;
+}
+.navegation .nav__menu .menu__horizontal li:hover .menu__vertical {
+  display: block;
+}
+.navegation .nav__menu .menu__horizontal li a {
+  display: block;
+  text-decoration: none;
+  padding-left: 10px;
+  font-family: "Fira Sans", sans-serif;
+  padding: 10px;
+}
+.navegation .nav__menu .menu__horizontal li a:hover {
+  color: #fff;
+}
+.navegation .nav__menu .menu__horizontal li .menu__vertical {
+  display: none;
+  position: absolute;
+  width: 200px;
+  padding: 0;
+  background-color: hsl(207deg, 100%, 72%);
+  border: solid 2px black;
+  border-top: 0px;
+  border-radius: 0px 0px 5px 5px;
+  transition: 2s;
+}
+.navegation .nav__menu .menu__horizontal li .menu__vertical li {
+  list-style: none;
+}
+.navegation .nav__menu .menu__horizontal li .menu__vertical li:hover {
+  background-color: hsl(208deg, 63%, 55%);
+  border-radius: 0;
+}
+.navegation .nav__menu .menu__horizontal li .menu__vertical li a {
+  display: block;
+  color: black;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
+.navegation .nav__menu .menu__horizontal li .menu__vertical li a:hover {
+  color: #fff;
+}
+
+.portada {
+  display: grid;
+  gap: 50px;
+}
+.portada .portada__presentacion {
+  display: grid;
+  grid-template-columns: 375px 4fr;
+}
+.portada .portada__presentacion img {
+  width: 350px;
+  box-shadow: 1px 5px 9px;
+}
+.portada .portada__presentacion .presentacion__informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.portada .portada__presentacion .presentacion__informacion h1 {
+  margin-top: 0;
+  background-color: hsl(208deg, 63%, 55%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 25px;
+}
+.portada .portada__farmacos {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}
+.portada .portada__farmacos img {
+  width: 350px;
+  box-shadow: 1px 5px 9px;
+}
+.portada .portada__farmacos .farmacos__informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.portada .portada__patologias {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+}
+.portada .portada__patologias img {
+  width: 350px;
+  box-shadow: 1px 5px 9px;
+}
+.portada .portada__patologias .patologias__informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.portada .portada__anatomia {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 30px;
+}
+.portada .portada__anatomia img {
+  width: 350px;
+  box-shadow: 1px 5px 9px;
+}
+.portada .portada__anatomia .anatomia__informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav__inferior {
+  background-image: url(../imagenes/fondo-nav.jpg);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,160 @@
+@import "../partials/variantes";
+@import "../partials/extend";
+.navegation{
+    display: flex;
+    justify-content: space-between;
+    .nav__log{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__buscador{
+        display: flex;
+        align-items: center;
+        input{
+            width: 200px;
+        }
+    }
+
+    .nav__menu{
+        .menu__horizontal{
+            display: flex;
+            list-style: none;
+
+            li{
+                &:hover{
+                    background-color: $secundario;
+                    border-radius: 14px 14px 0 0;
+                    .menu__vertical{
+                        display: block;
+                    }
+                }
+                a{
+                    display: block;
+                    text-decoration: none;
+                    padding-left: 10px;
+                    font-family: 'Fira Sans', sans-serif;
+                    padding: 10px;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+                .menu__vertical{
+                    display: none;
+                    position: absolute;
+                    width: 200px;
+                    padding: 0;
+                    background-color: $secundario;
+                    border: solid 2px black;
+                    border-top: 0px;
+                    border-radius: 0px 0px 5px 5px;
+                    transition: 2s;
+                    li{
+                        list-style: none;
+                        &:hover{
+                            background-color: $principal;
+                            border-radius: 0;
+                        }
+                        a{
+                            display: block;
+                            color: black;
+                            padding: 15px 15px 15px 20px;
+                            text-decoration: none;
+                            &:hover{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.portada{
+    display: grid;
+    gap: 50px;
+    .portada__presentacion{
+        display: grid;
+        grid-template-columns: 375px 4fr;
+        
+        img{
+        width: 350px;
+        box-shadow: 1px 5px 9px;
+        }
+        .presentacion__informacion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1{
+                margin-top: 0;
+                background-color: hsl(208, 63%, 55%);
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                border-radius: 25px;
+            }
+        }
+        }
+    .portada__farmacos{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 30px;
+        img{
+            width: 350px;
+            box-shadow: 1px 5px 9px;
+        }
+        .farmacos__informacion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                @extend %titulos;
+            }
+        }
+
+
+    }
+    .portada__patologias{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 30px;
+        img{
+            width: 350px;
+            box-shadow: 1px 5px 9px;
+        }
+        .patologias__informacion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                @extend %titulos;
+            }
+        }
+
+    }
+    .portada__anatomia{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 30px;
+        img{
+            width: 350px;
+            box-shadow: 1px 5px 9px;
+        }
+        .anatomia__informacion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                @extend %titulos;
+            }
+        }
+
+    }
+    }
+.nav__inferior{
+    background-image: url(../imagenes/fondo-nav.jpg), ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
